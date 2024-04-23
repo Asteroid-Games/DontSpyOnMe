@@ -29,6 +29,4 @@ async def checkserver(interaction: discord.Interaction):
     elif "id" in scanJson:
         await interaction.response.send_message(f"**WARNING:** A bot has been found with the user id: {scanJson["id"]}")
 
-        @bot.tree.command(name="checkserver")
-
 bot.run(os.getenv("TOKEN"))
